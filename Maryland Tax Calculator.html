@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+
+<Title> Tax Calculator </title>
+<center>
+
+<h1> Amount after Tax Calculator for the State of Maryland</h1>
+<p style = "font-size: 24px"> <strong>Please note that the amount shown might be one cent off.</strong> </p>
+<p> Enter your total in the box below, then press enter. </p>
+<script>
+ // Variables 
+ 
+ var a,result,finalresult; 
+ var b = 0.06;
+ 
+ function setValues(){
+a = Number(document.getElementById("a").value);
+
+
+}
+
+ function tax(){
+ setValues();
+ result = (a * b + a)
+ finalresult = result.toFixed(2);
+
+ alert("Your amount after tax will be $" +finalresult 
+ 
+ 
+ }
+
+
+</script>
+
+<body>
+<div>
+<input id="a" type="text"/>
+ 
+   
+   <input type="button" onclick="tax()" value="Enter"/>
+   <p> <strong>Thank you for this calculator, created by Darron Smallwood.</strong> </p>
+</div>   
+</body>
+
+
+</center>
+</html>

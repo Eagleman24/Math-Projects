@@ -1,0 +1,63 @@
+<!DOCTYPE>
+
+<title> </title> 
+
+<h1>Welcome to MathCalculator</h1>
+
+<script language= "javascript" content= "text/javascript">
+var a,b, result;
+
+function setValues(){
+a = Number(document.getElementById("a").value);
+b = Number(document.getElementById("b").value);
+}
+function sum(){
+ 
+ setValues();
+ result = a+b;
+ alert("The sum equals " +result);
+
+}
+
+function remainder(){
+ 
+ setValues();
+ result = a-b;
+ alert("The difference equals " +result);
+
+}
+
+function multiply(){
+ 
+ setValues();
+ result = a*b;
+ alert("The product equals " +result);
+
+}
+
+function divide(){
+ 
+ setValues();
+ result = a/b;
+ alert("The quotient equals " +result);
+
+}
+
+
+
+</script>
+
+<body>
+
+<center>
+<div>
+  <input id="a" type="text"/>
+  <input id="b" type="text"/>
+   
+   <input type="button" onclick="sum()" value="sum"/>
+   <input type="button" onclick="remainder()" value="remainder"/>
+   <input type="button" onclick="multiply()" value="muiltiply"/>
+   <input type="button" onclick="divide()" value="divide"/>
+   
+   </div>
+   
